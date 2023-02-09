@@ -1,0 +1,35 @@
+{
+  "name": "ki-green-it-node-api",
+  "version": "1.0.0",
+  "description": "Provides api tools",
+  "main": "index.js",
+  "author": "Thomas Sécher <thomas.secher@kleegroup.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint . --ext .ts",
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+  },
+  "devDependencies": {
+    "@shopify/eslint-plugin": "^42.0.3",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.33.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "_moduleAliases": {
+    "@services": "src/services",
+    "@structure": "src/structure"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "yargs": "^17.6.2"
+  }
+}

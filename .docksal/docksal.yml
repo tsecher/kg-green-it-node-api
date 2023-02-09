@@ -1,0 +1,23 @@
+version: "2.1"
+
+services:
+
+  # Node
+  cli:
+    build: 
+      dockerfile: services/node/Dockerfile
+      args: 
+        - HOST_UI
+    volumes:
+      - project_root:/var/www:rw,nocopy,cached
+    labels:
+      - io.docksal.user=node
+      - io.docksal.shell=sh
+      - io.docksal.project-root=${PROJECT_ROOT}
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_NO_WARNINGS=1
+      - ENVIRONMENT
+      - PROJECT_ROOT=/var/www
+      - API_URL
+    command: tail -F anything

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Shortcut to execute node methods in cli container.
+##
+## Usage: fin node *
+
+#: exec_target = cli
+
+node $*
