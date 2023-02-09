@@ -3,9 +3,7 @@
  *
  * Several tools for preparing the test context.
  */
-
-import 'module-alias/register';
-import {APIManager} from '@services/APIManager';
+import {APIManager} from '../../src/services/APIManager';
 
 import {getEnvData} from "./env";
 

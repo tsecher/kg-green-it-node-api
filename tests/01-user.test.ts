@@ -1,6 +1,6 @@
-import 'module-alias/register';
 import {expect} from 'chai';
-import {AuthService} from '@services/AuthService';
+
+import {AuthService} from '../src/services/AuthService';
 
 import {prepareApiManager} from './utils/prepare';
 import {getUserData} from "./utils/users";

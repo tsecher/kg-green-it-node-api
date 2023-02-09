@@ -1,10 +1,10 @@
 /**
  * Account manager.
  */
-import {LocalStorage} from '@services/LocalStorage';
-import {UserModel} from '@structure/User/UserModel';
+import {UserModel} from '../structure/User/UserModel';
 
 import {APIManager} from './APIManager';
+import {LocalStorage} from './LocalStorage';
 
 /**
  * Authentication service.
