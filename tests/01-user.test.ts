@@ -9,7 +9,6 @@ prepareApiManager();
 
 describe('User API', async () => {
 
-
   /**
    * Test user connection.
    */

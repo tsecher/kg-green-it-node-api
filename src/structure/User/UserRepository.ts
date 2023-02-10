@@ -1,14 +1,12 @@
 /**
  * User repository.
  */
-import {CachedListAbstract} from '../Bases/CachedListAbstract';
-
 import {UserModel} from './UserModel';
 
 /**
  * User repository.
  */
-class UserRepositoryClass extends CachedListAbstract {
+class UserRepositoryClass {
 
   /**
    * {@inheritdoc}
