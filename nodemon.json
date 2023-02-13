@@ -1,6 +1,6 @@
 {
-  "watch": ["src", "tests"],
+  "watch": ["src/**/*.ts", "tests"],
   "ext": ".ts,.js",
   "ignore": [],
-  "exec": "yarn lint"
+  "exec": "tsc && yarn lint"
 }
